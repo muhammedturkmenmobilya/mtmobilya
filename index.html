@@ -1039,7 +1039,19 @@
                 font-size: 32px;
             }
 
+            /* Enable Mobile Bar, Disable Floating */
+            .floating-action {
+                display: none !important;
+            }
 
+            .mobile-bottom-bar {
+                display: flex;
+            }
+
+            body {
+                padding-bottom: 60px;
+                /* Space for bottom bar */
+            }
         }
     </style>
 </head>
@@ -1361,7 +1373,15 @@
         <i class="fas fa-phone-alt"></i>
     </a>
 
-
+    <!-- Mobile Bottom Fixed Bar -->
+    <div class="mobile-bottom-bar">
+        <a href="tel:+905367231175" class="mobile-call">
+            <i class="fas fa-phone-alt"></i> Hemen Ara
+        </a>
+        <a href="https://wa.me/905367231175" target="_blank" class="mobile-wa">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+    </div>
 
     <!-- Scripts -->
     <script>
